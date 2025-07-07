@@ -23,6 +23,15 @@
   src: url("/fonts/Roboto-Bold.ttf");
 }
 
+:root {
+  --bg-primary-color: #fe9a00;
+  --bg-secondary-color: #fee685;
+  --text-primary-color: #000000;
+  --text-secondary-color: #ffffff;
+  --text-logo-color: #3d5280;
+  /* --text-logo-color: #464b92; */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -35,3 +44,120 @@ body {
   font-family: "Lato";
   font-size: 1rem;
 }
+
+.navbar .container-fluid {
+  background-color: var(--bg-secondary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.navbar .container-fluid {
+  padding: 0.3rem 9%;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.navbar .navbar-brand {
+  font-family: "DaysOne";
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text-logo-color);
+  transition: all 0.6s ease-in-out;
+}
+
+.navbar-nav a {
+  color: var(--text-secondary-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.6s ease-in-out;
+}
+
+.navbar-nav a:hover {
+  color: var(--text-primary-color);
+}
+
+/* * CAROUSEL CONTAINER  */
+/* Custom CSS to ensure carousel items take 80vh height */
+.carousel-item {
+  min-height: 80vh; /* Sets the minimum height of each slide */
+  display: flex; /* Use flexbox for vertical centering of content */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  text-align: center; /* Center text within the slide */
+  color: white; /* Default text color for better contrast on backgrounds */
+  position: relative; /* Needed for overlay and absolute positioning of image */
+  overflow: hidden; /* Hide any overflow from images */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 80vh; /* Make image fill the 80vh height of the carousel-item */
+  object-fit: cover; /* Cover the area without distorting aspect ratio */
+  position: absolute; /* Position image behind caption */
+  top: 0;
+  left: 0;
+  z-index: 0; /* Ensure image is behind the overlay and caption */
+}
+
+/* Optional: Add a subtle overlay for better text readability on images */
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 0; /* Ensure overlay is above background but below text */
+}
+
+.carousel-caption {
+  z-index: 2; /* Ensure caption is above the overlay */
+  position: relative; /* Make sure z-index works */
+  max-width: 80%; /* Limit caption width for better readability */
+  margin: auto; /* Center the caption */
+}
+
+/* Adjust font sizes for responsiveness */
+.carousel-caption h5 {
+  font-size: 2.5rem; /* Larger on desktop */
+  font-weight: bold;
+}
+.carousel-caption p {
+  font-size: 1.25rem; /* Larger on desktop */
+  text-shadow: 1px 1px 5px #000000;
+}
+
+/* Media query for smaller screens (e.g., mobile and tablet) */
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 1.75rem; /* Smaller on mobile */
+  }
+  .carousel-caption p {
+    font-size: 1rem; /* Smaller on mobile */
+    text-shadow: 1px 1px 5px #000000;
+  }
+  /* Adjust indicators position if needed for extremely small screens,
+               though Bootstrap usually handles this well. */
+  .carousel-indicators {
+    bottom: 10px; /* Adjust as needed */
+  }
+}
+/* .carousel .carousel-caption h5 {
+  font-size: 1.5rem;
+  font-family: Roboto;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px #000000;
+}
+
+.carousel .carousel-caption p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px #000000;
+} */
