@@ -137,6 +137,13 @@ body {
 .registrationContainer {
 }
 
+.overFlowText {
+  height: 100px;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* Media query for smaller screens (e.g., mobile and tablet) */
 @media (max-width: 768px) {
   .carousel-caption h5 {
