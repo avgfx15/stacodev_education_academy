@@ -25,740 +25,772 @@
     <title>Stacodev Education Academy</title>
   </head>
   <body>
-    <div class="siteContainer">
-      <!-- / NAVBAR CONTAINER START  -->
-      <nav class="navbar navbar-expand-lg" data-bs-theme="light">
-        <div class="container-fluid">
-          <a href="#"> <img src="Images/2.png" alt="logo" class="logo" /></a>
-          <div
-            class="navBrand d-flex flex-column align-items-start mx-3 justify-content-center"
-          >
-            <a class="navbar-brand" href="#">Stacodev</a>
+    <!-- / NAVBAR CONTAINER START  -->
+    <nav class="navbar navbar-expand-lg" data-bs-theme="light">
+      <div class="container-fluid">
+        <a href="#"> <img src="Images/2.png" alt="logo" class="logo" /></a>
+        <div
+          class="navBrand d-flex flex-column align-items-start mx-3 justify-content-center"
+        >
+          <a class="navbar-brand" href="#">Stacodev</a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-5" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
           </div>
+        </div>
+      </div>
+    </nav>
+    <!-- / NAVBAR CONTAINER END  -->
+
+    <!-- * CAROUSEL CONTAINER START -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/Images/carousel1.jpg"
+            class="d-block w-100"
+            alt="Carousel One"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Unlock Your Coding Potential</h5>
+            <p>
+              Dive into the world of programming with Stacodev. Our expert-led
+              courses are designed to transform beginners into skilled
+              developers, ready for tomorrow's challenges.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/Images/carousel2.jpg"
+            class="d-block w-100"
+            alt="Carousel Two"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Build Your Future, Code by Code</h5>
+            <p>
+              From foundational concepts to advanced frameworks, we equip you
+              with the practical skills needed to thrive in the tech industry.
+              Your journey to innovation starts here.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/Images/carousel3.jpg"
+            class="d-block w-100"
+            alt="Carousel Three"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Join a Community of Innovators</h5>
+            <p>
+              At Stacodev, you're not just learning code; you're becoming part
+              of a vibrant network. Collaborate, grow, and achieve your dreams
+              with like-minded individuals. The future is in your hands.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- * CAROUSEL CONTAINER START -->
+
+    <!--! REGISTRATION CONTAINER START -->
+    <div class="registrationContainer container">
+      <div class="card my-3">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img
+              src="/Images/registration-4519979.jpg"
+              class="img-fluid rounded-start"
+              alt="Registration"
+            />
+          </div>
+          <div class="col-md-6">
+            <div class="card-body">
+              <h3 class="card-title fw-bold">Registration</h3>
+              <h5 class="card-title">Ready to Start Your Coding Journey?</h5>
+              <p class="card-text">
+                Join Stacodev Education Academy and take the first step towards
+                a rewarding career in technology. Our streamlined registration
+                process makes it easy to enroll in your desired course.
+              </p>
+
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#howToRegisterModal"
+              >
+                How To Register
+              </button>
+              <button
+                type="button"
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#registrationFormModal"
+              >
+                Registeration Form
+              </button>
+
+              <!--# HOW TO REGISTER MODAL START HERE -->
+              <div
+                class="modal fade"
+                id="howToRegisterModal"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Follow These Steps To Register :
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">
+                          Choose Your Course: Browse our diverse range of
+                          courses and select the one that fits your aspirations.
+                        </li>
+                        <li class="list-group-item">
+                          Fill the Form: Complete our simple online registration
+                          form with your details.
+                        </li>
+                        <li class="list-group-item">
+                          Confirm & Pay: Secure your spot by completing the
+                          payment through our secure gateway.
+                        </li>
+                        <li class="list-group-item">
+                          Welcome to Stacodev: Receive your course materials and
+                          access to our learning platform.
+                        </li>
+                      </ol>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Understood
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--# HOW TO REGISTER MODAL ENDS HERE -->
+
+              <!--# HOW TO REGISTER MODAL START HERE -->
+              <div
+                class="modal fade"
+                id="registrationFormModal"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Registration Form :
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="bi bi-person"></i
+                        ></span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Username"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="bi bi-envelope-at-fill"></i>
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="email"
+                          aria-label="email"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="bi bi-person-bounding-box"></i>
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="name"
+                          aria-label="name"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"
+                          ><i class="bi bi-phone-vibrate"></i>
+                        </span>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="mobile"
+                          aria-label="mobile"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
+                      <p>
+                        Thanking you for registration we will contact you
+                        shortly.
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--# REGISTRATION MODAL ENDS HERE -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--! REGISTRATION CONTAINER END -->
+
+    <!--^ ACCORDION SECTION START -->
+    <div class="accordion container" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
           <button
-            class="navbar-toggler"
+            class="accordion-button"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
+            data-bs-target="#collapseOne"
             aria-expanded="false"
-            aria-label="Toggle navigation"
+            aria-controls="collapseOne"
           >
-            <span class="navbar-toggler-icon"></span>
+            Our Mission
           </button>
-          <div class="collapse navbar-collapse ms-5" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!-- / NAVBAR CONTAINER END  -->
-
-      <!-- * CAROUSEL CONTAINER START -->
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="/Images/carousel1.jpg"
-              class="d-block w-100"
-              alt="Carousel One"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Unlock Your Coding Potential</h5>
-              <p>
-                Dive into the world of programming with Stacodev. Our expert-led
-                courses are designed to transform beginners into skilled
-                developers, ready for tomorrow's challenges.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/Images/carousel2.jpg"
-              class="d-block w-100"
-              alt="Carousel Two"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Build Your Future, Code by Code</h5>
-              <p>
-                From foundational concepts to advanced frameworks, we equip you
-                with the practical skills needed to thrive in the tech industry.
-                Your journey to innovation starts here.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/Images/carousel3.jpg"
-              class="d-block w-100"
-              alt="Carousel Three"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Join a Community of Innovators</h5>
-              <p>
-                At Stacodev, you're not just learning code; you're becoming part
-                of a vibrant network. Collaborate, grow, and achieve your dreams
-                with like-minded individuals. The future is in your hands.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <!-- * CAROUSEL CONTAINER START -->
-
-      <!--! REGISTRATION CONTAINER START -->
-      <div class="registrationContainer container">
-        <div class="card my-3">
-          <div class="row g-0">
-            <div class="col-md-6">
-              <img
-                src="/Images/registration-4519979.jpg"
-                class="img-fluid rounded-start"
-                alt="Registration"
-              />
-            </div>
-            <div class="col-md-6">
-              <div class="card-body">
-                <h3 class="card-title fw-bold">Registration</h3>
-                <h5 class="card-title">Ready to Start Your Coding Journey?</h5>
-                <p class="card-text">
-                  Join Stacodev Education Academy and take the first step
-                  towards a rewarding career in technology. Our streamlined
-                  registration process makes it easy to enroll in your desired
-                  course.
-                </p>
-
-                <!-- Button trigger modal -->
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-bs-toggle="modal"
-                  data-bs-target="#howToRegisterModal"
-                >
-                  How To Register
-                </button>
-                <button
-                  type="button"
-                  class="btn btn-warning"
-                  data-bs-toggle="modal"
-                  data-bs-target="#registrationFormModal"
-                >
-                  Registeration Form
-                </button>
-
-                <!--# HOW TO REGISTER MODAL START HERE -->
-                <div
-                  class="modal fade"
-                  id="howToRegisterModal"
-                  data-bs-backdrop="static"
-                  data-bs-keyboard="false"
-                  tabindex="-1"
-                  aria-labelledby="staticBackdropLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                          Follow These Steps To Register :
-                        </h1>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <ol class="list-group list-group-numbered">
-                          <li class="list-group-item">
-                            Choose Your Course: Browse our diverse range of
-                            courses and select the one that fits your
-                            aspirations.
-                          </li>
-                          <li class="list-group-item">
-                            Fill the Form: Complete our simple online
-                            registration form with your details.
-                          </li>
-                          <li class="list-group-item">
-                            Confirm & Pay: Secure your spot by completing the
-                            payment through our secure gateway.
-                          </li>
-                          <li class="list-group-item">
-                            Welcome to Stacodev: Receive your course materials
-                            and access to our learning platform.
-                          </li>
-                        </ol>
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                          Understood
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--# HOW TO REGISTER MODAL ENDS HERE -->
-
-                <!--# HOW TO REGISTER MODAL START HERE -->
-                <div
-                  class="modal fade"
-                  id="registrationFormModal"
-                  data-bs-backdrop="static"
-                  data-bs-keyboard="false"
-                  tabindex="-1"
-                  aria-labelledby="staticBackdropLabel"
-                  aria-hidden="true"
-                >
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                          Registration Form :
-                        </h1>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div class="modal-body">
-                        <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon1"
-                            ><i class="bi bi-person"></i
-                          ></span>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Username"
-                            aria-label="Username"
-                            aria-describedby="basic-addon1"
-                          />
-                        </div>
-                        <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon1"
-                            ><i class="bi bi-envelope-at-fill"></i>
-                          </span>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="email"
-                            aria-label="email"
-                            aria-describedby="basic-addon1"
-                          />
-                        </div>
-                        <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon1"
-                            ><i class="bi bi-person-bounding-box"></i>
-                          </span>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="name"
-                            aria-label="name"
-                            aria-describedby="basic-addon1"
-                          />
-                        </div>
-                        <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon1"
-                            ><i class="bi bi-phone-vibrate"></i>
-                          </span>
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="mobile"
-                            aria-label="mobile"
-                            aria-describedby="basic-addon1"
-                          />
-                        </div>
-                        <p>
-                          Thanking you for registration we will contact you
-                          shortly.
-                        </p>
-                      </div>
-                      <div class="modal-footer">
-                        <button
-                          type="button"
-                          class="btn btn-secondary"
-                          data-bs-dismiss="modal"
-                        >
-                          Close
-                        </button>
-                        <button type="button" class="btn btn-primary">
-                          Submit
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--# REGISTRATION MODAL ENDS HERE -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--! REGISTRATION CONTAINER END -->
-
-      <!--^ ACCORDION SECTION START -->
-      <div class="accordion container" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="false"
-              aria-controls="collapseOne"
-            >
-              Our Mission
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <h3>Nurturing Talent, Driving Innovation</h3>
-              <p>
-                Our mission at Stacodev Education Academy is to provide
-                accessible, high-quality, and practical coding education that
-                empowers individuals to achieve their professional aspirations.
-                We are committed to:
-              </p>
-              <ul>
-                <li>
-                  <strong>Delivering Excellence: </strong>Offering
-                  comprehensive, up-to-date curricula taught by industry
-                  experts.
-                </li>
-                <li>
-                  <strong>Fostering Growth: </strong>Creating a supportive
-                  learning environment that encourages continuous development
-                  and problem-solving.
-                </li>
-                <li>
-                  <strong>Ensuring Employability: </strong>Equipping students
-                  with in-demand skills and career readiness support to succeed
-                  in the tech industry.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Our Vision
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <h3>Shaping a Digital Future, One Coder at a Time</h3>
-              <p>
-                Our vision is to be a leading educational institution renowned
-                for producing highly skilled, innovative, and ethically
-                responsible tech professionals. We aspire to:
-              </p>
-              <ul>
-                <li>
-                  Be the preferred choice for aspiring coders seeking practical
-                  and career-focused training.
-                </li>
-                <li>
-                  Continuously adapt our programs to meet the evolving needs of
-                  the global technology landscape.
-                </li>
-                <li>
-                  Cultivate a vibrant community of lifelong learners and tech
-                  enthusiasts who contribute positively to society.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Our Achievements
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <h3>Celebrating Our Journey of Excellence</h3>
-              <p>
-                At Stacodev Education Academy, our achievements are reflected in
-                the success of our students and the impact we make on the tech
-                community.
-              </p>
-              <ul>
-                <li>
-                  <strong>High Student Placement: </strong>Consistently
-                  achieving excellent placement rates for our graduates in
-                  leading tech companies.
-                </li>
-                <li>
-                  <strong>Industry Recognition: </strong>Mention any awards,
-                  certifications, or partnerships, e.g., "Recognized as a top
-                  coding academy in Gujarat by [Name of Organization
-                </li>
-                <li>
-                  <strong>Curriculum Innovation: </strong>Regularly updating our
-                  course content to incorporate the latest technologies and
-                  industry best practices.
-                </li>
-                <li>
-                  <strong>Community Impact: </strong>Hosting workshops,
-                  seminars, and coding challenges that benefit the broader tech
-                  community in Surat and beyond.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--^ ACCORDION SECTION END -->
-
-      <!-- % ABOUT US CONTAINER START -->
-      <div class="container my-3">
-        <div class="card mb-3">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <div class="card-body">
-                <h2 class="card-title text-center fw-bold">About Us</h2>
-                <h4>Empowering the Next Generation of Tech Leaders</h4>
-                <p class="card-text">
-                  Stacodev Education Academy was founded with a singular vision:
-                  to bridge the gap between aspiring technologists and the
-                  dynamic demands of the digital world. Located in Surat,
-                  Gujarat, we are dedicated to providing high-quality,
-                  practical, and industry-relevant coding education.
-                </p>
-                <p class="card-text">
-                  We believe that everyone deserves the opportunity to master
-                  the skills that drive innovation. Our curriculum is
-                  meticulously crafted by seasoned professionals, ensuring that
-                  our students gain both theoretical knowledge and hands-on
-                  experience. At Stacodev, we don't just teach code; we foster
-                  critical thinking, problem-solving abilities, and a lifelong
-                  passion for learning.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <img
-                src="/Images/imprint-418597.jpg"
-                class="img-fluid rounded-start"
-                alt="About"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- % ABOUT US CONTAINER END -->
-
-      <!-- & WE OFFER CONTAINER START -->
-
-      <div class="container rounded-3 mb-3">
-        <h2
-          class="p-3 border-3 border-bottom border-top border-warning rounded-4 fw-bolder d-inline-block w-100 text-center"
-        >
-          Our Courses
         </h2>
-        <div class="card-group d-flex justify-content-between">
-          <div class="card me-3 border border-warning rounded-2">
-            <i class="bi bi-code-slash text-center fa-4x"></i>
-            <div class="card-body">
-              <h5 class="card-title">Web Development Full Stack Bootcamp</h5>
-              <p class="card-text">
-                This bootcamp is intended for anyone who has zero to some
-                programming knowledge and is looking for that guided approach to
-                becoming an engineer in 4 months. In this bootcamp, you’ll learn
-                the core fundamentals of web programming by building practical,
-                real-life applications using Angular and React.
-              </p>
-              <button type="button" class="btn btn-primary">
-                Take me to the course details
-              </button>
-            </div>
-          </div>
-          <div class="card me-3 border border-warning rounded-2">
-            <i class="bi bi-stack text-center fa-4x"></i>
-            <div class="card-body">
-              <h5 class="card-title">
-                Software Development Deep Stack Bootcamp
-              </h5>
-              <p class="card-text">
-                This bootcamp is intended for anyone who has zero to some
-                programming knowledge and is looking for that guided approach to
-                becoming an engineer in 4 months. In this bootcamp, you’ll learn
-                the core fundamentals of C#, Xamarin and microservices
-                programming by building practical, real-life applications.
-              </p>
-              <button type="button" class="btn btn-primary">
-                Take me to the course details
-              </button>
-            </div>
-          </div>
-          <div class="card border border-warning rounded-2">
-            <i class="bi bi-book-half text-center fa-4x"></i>
-            <div class="card-body">
-              <h5 class="card-title">Technical Interview Prep Bootcamp</h5>
-              <p class="card-text">
-                This interview prep bootcamp is for anyone who has coding
-                experience but looking to ace that technical interview to land a
-                job as an engineer. In this bootcamp you will learn everything
-                from behavioral questions to system design to solving hard
-                technical problems.
-              </p>
-              <button type="button" class="btn btn-primary">
-                Take me to the course details
-              </button>
-            </div>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h3>Nurturing Talent, Driving Innovation</h3>
+            <p>
+              Our mission at Stacodev Education Academy is to provide
+              accessible, high-quality, and practical coding education that
+              empowers individuals to achieve their professional aspirations. We
+              are committed to:
+            </p>
+            <ul>
+              <li>
+                <strong>Delivering Excellence: </strong>Offering comprehensive,
+                up-to-date curricula taught by industry experts.
+              </li>
+              <li>
+                <strong>Fostering Growth: </strong>Creating a supportive
+                learning environment that encourages continuous development and
+                problem-solving.
+              </li>
+              <li>
+                <strong>Ensuring Employability: </strong>Equipping students with
+                in-demand skills and career readiness support to succeed in the
+                tech industry.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- & WE OFFER CONTAINER END -->
-
-      <!-- * TESTIMONIALS CONTAINER START -->
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col h-100">
-            <div class="card">
-              <img
-                src="/Images/model-5688245_1920.jpg"
-                class="card-img-top"
-                style="object-fit: cover; height: 250px"
-                alt="Model"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Reni Robinsons</h5>
-                <p class="card-text">B.Ed. 2020-2022</p>
-                <p
-                  class="card-text"
-                  style="
-                    height: 150px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                  "
-                >
-                  Rahul College of education is the right place for students who
-                  wish to become a teacher. It is an awesome experience to be a
-                  part of such an esteemed institute with nice, supportive and
-                  highly educated faculties. They have always come an extra mile
-                  while explaining the concepts in simple life and using real
-                  life examples that makes learning more interesting. My
-                  experience in college has given me a chance to sharpen my
-                  skills in the field of teaching. I am very grateful to my
-                  teachers and mentors. The college also conducts seminars and
-                  workshops which help us to enhance the subject knowledge. They
-                  taught me a lesson that learning never ends and a teacher
-                  should be like a candle who spends her whole life lighting up
-                  the life of students.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col h-100">
-            <div class="card">
-              <img
-                src="/Images/man-5668710_1920.jpg"
-                class="card-img-top"
-                style="object-fit: cover; height: 250px"
-                alt="Man"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Poul Caraman</h5>
-                <p class="cat">MBBS 2024 - 2025</p>
-                <p
-                  class="card-text"
-                  style="
-                    height: 150px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                  "
-                >
-                  It gives me great pleasure to say with pride that I have
-                  completed my B.Ed. from Rahul College of Education. The
-                  relationship between faculties and students is very cordial,
-                  which gave me an opportunity to excel in my area of interest.
-                  The two years spent here were splendid and have helped me to
-                  grow better professionally & personally. I would like to thank
-                  Rahul College of Education & all the faculties and staff for
-                  making me a "Better Person".
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col h-100">
-            <div class="card">
-              <img
-                src="/Images/professor-7743594_1920.jpg"
-                class="card-img-top"
-                style="object-fit: cover; height: 250px"
-                alt="Professor"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Benjamin Romsons</h5>
-                <p class="card-text">MD 2021 - 2025</p>
-                <p
-                  class="card-text"
-                  style="
-                    height: 150px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                  "
-                >
-                  I feel extremely thankful to our Principal Sanjana ma'am, my
-                  teachers, my classmates, and Rahul College of Education for
-                  nurturing me to become a better teacher and for giving me
-                  opportunities to do my best in the teaching field.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col h-100">
-            <div class="card">
-              <img
-                src="/Images/gesture-7134756.jpg"
-                class="card-img-top"
-                style="object-fit: cover; height: 250px"
-                alt="Gesture"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Stive Pitterson</h5>
-                MBA (Finance) 2020 - 2023
-                <p
-                  class="card-text"
-                  style="
-                    height: 150px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                  "
-                >
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col h-100">
-            <div class="card">
-              <img
-                src="/Images/chalkboard-1280967.jpg"
-                class="card-img-top"
-                style="object-fit: cover; height: 250px"
-                alt="Chalkboard"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Krimani Kaushal</h5>
-                CA 2020 - 2026
-                <p
-                  class="card-text"
-                  style="
-                    height: 150px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                  "
-                >
-                  From the beginning, I wanted to become an educator but it was
-                  Rahul College of Education that gave me the right direction
-                  for it. Our beloved principal Sanjana ma'am has always been
-                  the motivator, and guide that you need in your life. All the
-                  teachers such as Bhagyashree ma'am, Firoza ma'am, Banker Sir,
-                  and Alka ma'am have been the ideal educators for us. I am very
-                  thankful and proud to have such motivators, inspirations, and
-                  supporting staff that has taught me so many things.
-                </p>
-              </div>
-            </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            Our Vision
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h3>Shaping a Digital Future, One Coder at a Time</h3>
+            <p>
+              Our vision is to be a leading educational institution renowned for
+              producing highly skilled, innovative, and ethically responsible
+              tech professionals. We aspire to:
+            </p>
+            <ul>
+              <li>
+                Be the preferred choice for aspiring coders seeking practical
+                and career-focused training.
+              </li>
+              <li>
+                Continuously adapt our programs to meet the evolving needs of
+                the global technology landscape.
+              </li>
+              <li>
+                Cultivate a vibrant community of lifelong learners and tech
+                enthusiasts who contribute positively to society.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <!-- * TESTIMONIALS CONTAINER END -->
-
-      <!-- ~ CONTACT US CONTAINER START  -->
-      <div class="container"></div>
-      <!-- ~ CONTACT US CONTAINER END  -->
-      <div class="footerContainer"></div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            Our Achievements
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <h3>Celebrating Our Journey of Excellence</h3>
+            <p>
+              At Stacodev Education Academy, our achievements are reflected in
+              the success of our students and the impact we make on the tech
+              community.
+            </p>
+            <ul>
+              <li>
+                <strong>High Student Placement: </strong>Consistently achieving
+                excellent placement rates for our graduates in leading tech
+                companies.
+              </li>
+              <li>
+                <strong>Industry Recognition: </strong>Mention any awards,
+                certifications, or partnerships, e.g., "Recognized as a top
+                coding academy in Gujarat by [Name of Organization
+              </li>
+              <li>
+                <strong>Curriculum Innovation: </strong>Regularly updating our
+                course content to incorporate the latest technologies and
+                industry best practices.
+              </li>
+              <li>
+                <strong>Community Impact: </strong>Hosting workshops, seminars,
+                and coding challenges that benefit the broader tech community in
+                Surat and beyond.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+    <!--^ ACCORDION SECTION END -->
+
+    <!-- % ABOUT US CONTAINER START -->
+    <div class="container my-3">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title text-center fw-bold">About Us</h2>
+              <h4>Empowering the Next Generation of Tech Leaders</h4>
+              <p class="card-text">
+                Stacodev Education Academy was founded with a singular vision:
+                to bridge the gap between aspiring technologists and the dynamic
+                demands of the digital world. Located in Surat, Gujarat, we are
+                dedicated to providing high-quality, practical, and
+                industry-relevant coding education.
+              </p>
+              <p class="card-text">
+                We believe that everyone deserves the opportunity to master the
+                skills that drive innovation. Our curriculum is meticulously
+                crafted by seasoned professionals, ensuring that our students
+                gain both theoretical knowledge and hands-on experience. At
+                Stacodev, we don't just teach code; we foster critical thinking,
+                problem-solving abilities, and a lifelong passion for learning.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="/Images/imprint-418597.jpg"
+              class="img-fluid rounded-start"
+              alt="About"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- % ABOUT US CONTAINER END -->
+
+    <!-- & WE OFFER CONTAINER START -->
+
+    <div class="container rounded-3 mb-3">
+      <h2
+        class="p-3 border-3 border-bottom border-top border-warning rounded-4 fw-bolder d-inline-block w-100 text-center"
+      >
+        Our Courses
+      </h2>
+      <div class="card-group d-flex justify-content-between">
+        <div class="card me-3 border border-warning rounded-2">
+          <i class="bi bi-code-slash text-center fa-4x"></i>
+          <div class="card-body">
+            <h5 class="card-title">Web Development Full Stack Bootcamp</h5>
+            <p class="card-text">
+              This bootcamp is intended for anyone who has zero to some
+              programming knowledge and is looking for that guided approach to
+              becoming an engineer in 4 months. In this bootcamp, you’ll learn
+              the core fundamentals of web programming by building practical,
+              real-life applications using Angular and React.
+            </p>
+            <button type="button" class="btn btn-primary">
+              Take me to the course details
+            </button>
+          </div>
+        </div>
+        <div class="card me-3 border border-warning rounded-2">
+          <i class="bi bi-stack text-center fa-4x"></i>
+          <div class="card-body">
+            <h5 class="card-title">Software Development Deep Stack Bootcamp</h5>
+            <p class="card-text">
+              This bootcamp is intended for anyone who has zero to some
+              programming knowledge and is looking for that guided approach to
+              becoming an engineer in 4 months. In this bootcamp, you’ll learn
+              the core fundamentals of C#, Xamarin and microservices programming
+              by building practical, real-life applications.
+            </p>
+            <button type="button" class="btn btn-primary">
+              Take me to the course details
+            </button>
+          </div>
+        </div>
+        <div class="card border border-warning rounded-2">
+          <i class="bi bi-book-half text-center fa-4x"></i>
+          <div class="card-body">
+            <h5 class="card-title">Technical Interview Prep Bootcamp</h5>
+            <p class="card-text">
+              This interview prep bootcamp is for anyone who has coding
+              experience but looking to ace that technical interview to land a
+              job as an engineer. In this bootcamp you will learn everything
+              from behavioral questions to system design to solving hard
+              technical problems.
+            </p>
+            <button type="button" class="btn btn-primary">
+              Take me to the course details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- & WE OFFER CONTAINER END -->
+
+    <!-- * TESTIMONIALS CONTAINER START -->
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col h-100">
+          <div class="card">
+            <img
+              src="/Images/model-5688245_1920.jpg"
+              class="card-img-top"
+              style="object-fit: cover; height: 250px"
+              alt="Model"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Reni Robinsons</h5>
+              <p class="card-text">B.Ed. 2020-2022</p>
+              <p
+                class="card-text"
+                style="height: 150px; overflow: hidden; text-overflow: ellipsis"
+              >
+                Rahul College of education is the right place for students who
+                wish to become a teacher. It is an awesome experience to be a
+                part of such an esteemed institute with nice, supportive and
+                highly educated faculties. They have always come an extra mile
+                while explaining the concepts in simple life and using real life
+                examples that makes learning more interesting. My experience in
+                college has given me a chance to sharpen my skills in the field
+                of teaching. I am very grateful to my teachers and mentors. The
+                college also conducts seminars and workshops which help us to
+                enhance the subject knowledge. They taught me a lesson that
+                learning never ends and a teacher should be like a candle who
+                spends her whole life lighting up the life of students.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col h-100">
+          <div class="card">
+            <img
+              src="/Images/man-5668710_1920.jpg"
+              class="card-img-top"
+              style="object-fit: cover; height: 250px"
+              alt="Man"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Poul Caraman</h5>
+              <p class="cat">MBBS 2024 - 2025</p>
+              <p
+                class="card-text"
+                style="height: 150px; overflow: hidden; text-overflow: ellipsis"
+              >
+                It gives me great pleasure to say with pride that I have
+                completed my B.Ed. from Rahul College of Education. The
+                relationship between faculties and students is very cordial,
+                which gave me an opportunity to excel in my area of interest.
+                The two years spent here were splendid and have helped me to
+                grow better professionally & personally. I would like to thank
+                Rahul College of Education & all the faculties and staff for
+                making me a "Better Person".
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col h-100">
+          <div class="card">
+            <img
+              src="/Images/professor-7743594_1920.jpg"
+              class="card-img-top"
+              style="object-fit: cover; height: 250px"
+              alt="Professor"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Benjamin Romsons</h5>
+              <p class="card-text">MD 2021 - 2025</p>
+              <p
+                class="card-text"
+                style="height: 150px; overflow: hidden; text-overflow: ellipsis"
+              >
+                I feel extremely thankful to our Principal Sanjana ma'am, my
+                teachers, my classmates, and Rahul College of Education for
+                nurturing me to become a better teacher and for giving me
+                opportunities to do my best in the teaching field.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col h-100">
+          <div class="card">
+            <img
+              src="/Images/gesture-7134756.jpg"
+              class="card-img-top"
+              style="object-fit: cover; height: 250px"
+              alt="Gesture"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Stive Pitterson</h5>
+              MBA (Finance) 2020 - 2023
+              <p
+                class="card-text"
+                style="height: 150px; overflow: hidden; text-overflow: ellipsis"
+              >
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col h-100">
+          <div class="card">
+            <img
+              src="/Images/chalkboard-1280967.jpg"
+              class="card-img-top"
+              style="object-fit: cover; height: 250px"
+              alt="Chalkboard"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Krimani Kaushal</h5>
+              CA 2020 - 2026
+              <p
+                class="card-text"
+                style="height: 150px; overflow: hidden; text-overflow: ellipsis"
+              >
+                From the beginning, I wanted to become an educator but it was
+                Rahul College of Education that gave me the right direction for
+                it. Our beloved principal Sanjana ma'am has always been the
+                motivator, and guide that you need in your life. All the
+                teachers such as Bhagyashree ma'am, Firoza ma'am, Banker Sir,
+                and Alka ma'am have been the ideal educators for us. I am very
+                thankful and proud to have such motivators, inspirations, and
+                supporting staff that has taught me so many things.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- * TESTIMONIALS CONTAINER END -->
+
+    <!-- ~ CONTACT US CONTAINER START  -->
+    <div class="container my-3 bg-info rounded-2">
+      <div class="text-center">
+        <h2
+          class="d-inline-block border-2 border-bottom border-warning rounded-4 p-2"
+        >
+          Contact Us
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-8 m-auto">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Rocher Smith"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Mobile</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="9658565896"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Example textarea</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <button type="button" class="btn btn-warning">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ~ CONTACT US CONTAINER END  -->
+    <div class="bg-warning">
+      <p class="text-center py-2 m-0">Copyright&copy; Stacodev</p>
+    </div>
+
     <!--/ Bootstrap JavaScript CDN -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
